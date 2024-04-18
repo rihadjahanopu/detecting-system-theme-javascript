@@ -1,0 +1,50 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.light {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.dark {
+  background-color: #222;
+  color: #ddd;
+}
+
+.theme-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  height: 100vh;
+}
+
+.theme-buttons button {
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #eee;
+  color: #333;
+}
+
+.theme-buttons button:hover {
+  background-color: #ddd;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: #fff;
+    color: #333;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #333;
+    color: #fff;
+  }
+}
